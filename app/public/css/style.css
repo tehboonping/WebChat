@@ -1,0 +1,44 @@
+.texts 
+{
+	overflow-y: scroll;
+	position: absolute;
+	width:  1000px;
+	height: 500px;
+	border: 1px solid #000;
+	white-space: pre-wrap;
+
+	left: 165px;
+}
+
+.msgbox
+{
+	text-align: left;
+	padding-left: 0px;
+	list-style-type: none;
+	position: absolute;
+	left: 100px;
+}
+
+.textbox
+{
+	width:  995px;
+	height: 100px;
+	white-space: pre-wrap;
+	position: relative;
+	top: 510px;
+	left: 160px;
+}
+
+.button
+{
+	position: relative;
+	top: 500px;
+	left: 160px;
+}
+
+.child {
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}

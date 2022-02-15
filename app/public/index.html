@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>チャット</h1>
+    <form id="room-post">
+        <label>
+            <h2>名前</h2>
+            <input type="hidden" id="room" value="0">
+            <input type="text" id="user_name" name="name" value="user1">
+        </label>
+        <input type="submit" value="入室">
+    </form>
+
+    <script src="socket.io/socket.io.min.js"></script>
+    <script src="./js/room.js"></script>
+</body>
+</html>

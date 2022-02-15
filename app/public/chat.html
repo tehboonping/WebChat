@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>チャット</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>チャット</h1>
+    <h2>メッセージ</h2>
+
+    <div class="texts">
+        <ul id="msglist" class="msgbox">
+        </ul>
+    </div>
+    <form id="frm-post">
+        <label>
+            <textarea id="msg" class="textbox"></textarea>
+        </label>
+        <button class="button">送信</button>
+    </form>
+
+    <script src="socket.io/socket.io.min.js"></script>
+    <script src="./js/socket.js"></script>
+</body>
+
+</html>

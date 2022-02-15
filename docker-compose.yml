@@ -1,0 +1,23 @@
+version: '3'
+services:
+  app:
+    build: .
+    environment:
+      - NODE_ENV=production node server.js
+    volumes:
+      - ./app:/usr/src/app
+    ports:
+      - 8085:8085
+    command: sh -c 'node server.js'
+    tty: true
+    depends_on:
+        - mysql
+
+  mysql:
+    build: ./mysql/    
+    volumes:
+      - ./mysql/initdb.d:/docker-entrypoint-initdb.d
+      - ./mysql/db:/var/lib/mysql
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=pass
